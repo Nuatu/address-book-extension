@@ -1,7 +1,8 @@
 $(document).ready(function () {
   var addressCounter=0;
   $("#add-address").click(function() {
-  var addressCounter=1;
+    addressCounter++;
+    alert(addressCounter);  // Question: How can I insert custom div id or class? similar to address book app from monday 7/14/14
     $("#new-addresses").append('<div class="new-address addressCounter1">' +
                   '<div class="form-group">' +
                     '<label for="new-street">Address</label>' +
